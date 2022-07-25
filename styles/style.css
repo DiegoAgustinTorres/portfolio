@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif
+}
+
+header{
+    background-color: aqua;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgb(54, 83, 102) 21%, rgba(68,84,99,1) 100%);    background-size: 400% 400%;
+    animation: Gradient 30s ease infinite;
+/*     position: fixed;
+    width: 100%; */
+ 
+
+}
+.logo{
+    align-self: center;
+    margin-left: 20px;
+    padding: 2px;
+    color: aliceblue;
+    transition: ease-in .30s;
+    border-radius: 10px;
+}
+.logo a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.logo:hover{
+    background-color: aliceblue;
+    padding: 2px;
+    border-radius: 10px;
+}
+.logo a:hover{
+    color: rgb(54, 83, 102);
+}
+nav{
+    align-self: center;
+    padding-right: 20px;
+    width: 40vh;
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 2px;
+    border-radius: 15px;
+    transition: ease-in .30s;
+}
+nav a:hover{
+    padding: 2px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    color: rgb(54, 83, 102);
+}
+/* ---------------------------------------- */
+
+.presentacion{
+    color: aliceblue;
+    height: 100vh;
+    justify-content: space-between; 
+    display: flex;
+    justify-content: center;
+
+    background-image: linear-gradient(0deg,
+     rgba(0, 0, 0, 0.9),
+     rgba(0, 0, 0, 0.9)), url(../images/code.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.contenedor{
+    align-self: center;
+/*     border: black solid 2px; */
+    display: flex;
+    align-items: center;
+}
+.photo{
+    padding: 50px;
+}
+.p--front{
+    font-size: 72px;
+    background-image: linear-gradient(90deg, rgb(54, 83, 102) 21%, rgba(68,84,99,1) 100%);    background-size: 400% 400%;
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+
+
+
+}
+.p--front:hover{
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 500%;
+    }
+    50% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 500%;
+    }
+}
+
+.photo img{
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 14px 15px 0px 2px rgba(255, 255, 255, 0.753);
+}
+.nombre{
+/*     border: black solid 2px; */
+    width: 60vh;
+    margin-right: 15px;
+}
+.nombre h1{
+    font-size: 4.5rem;
+}
+.nombre h3{
+    font-size: 2rem;
+    margin-left: 20px;
+    font-style: italic;
+}
+.nombre p{
+    font-size: 1.4rem;
+    margin-top: 40px;
+    font-weight: 700;
+    
+}
+.nombre--descripcion{
+/*     border: black solid 2px; */
+    width: 57vh;
+    margin-left: 25px;
+}
+.nombre--descripcion p{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.contact--icons{
+    padding-top: 35px;
+}
+.contact--icons img:hover{
+    box-shadow: 2px 5px 5px 1px rgb(83, 83, 83);
+}
+.contact--icons img{
+    height: 40px;
+    border-radius: 40px;
+    margin-right: 20px;
+}
+/* ------------------------------------ */
+.skills{
+    height: 100vh;
+    color: aliceblue;
+    background: linear-gradient(90deg, rgb(136, 139, 141) 21%, rgba(68,84,99,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icons{
+    height: 50px;
+}
+.titulo--skills h2{
+    font-size: 5rem;
+}
+.contenedor--skills{
+    display: flex;
+}
+.contenedor--skills ul{
+    font-size: 3.3rem;
+    padding: 20px;
+    list-style: none;
+    
+}
+.contenedor--skills li{
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    border-bottom: 5px solid rgb(170, 170, 170);
+}
+/* ------------------------------------ */
+.me{
+    height: 95vh;
+    background: linear-gradient(90deg, rgb(40, 60, 73) 21%, rgb(25, 32, 39) 100%);    background-size: 400% 400%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.presentacion--me{
+    color: aliceblue;
+    display: flex;
+    width: 95vh;
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 70px;
+}
+.contact-me{
+    color: aliceblue;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.contact-me ul{
+    font-size: 2rem;
+    padding: 20px;
+    list-style: none;
+    
+    
+}
+.contact-me a{
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+    border-bottom: 4px solid rgb(126, 125, 125);
+    width: 12vw;
+}
+
+
+footer{
+    height: 10vh;
+    background: linear-gradient(90deg, rgb(40, 60, 73) 21%, rgb(25, 32, 39) 100%);    background-size: 400% 400%;
+    color: aliceblue;
+
+}
+footer h4{
+    
+    font-size: 1rem;
+    font-style: italic;
+    padding-top: 40px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .p--front{
+        font-size: 3rem;
+    }
+    .photo img{
+        height: 300px;
+
+    }
+    .contenedor{
+        width: 100vw;
+    }
+        .nombre h1{
+            font-size: 3.2rem;
+        }
+        .nombre h3{
+            font-size: 2rem;
+        }
+        .nombre p{
+            font-size: 1.1rem;   
+        }
+        .nombre--descripcion p{
+            font-size: 1rem;
+        }
+
+}
+@media screen and (max-width: 700px) {
+    .contenedor{
+        flex-direction: column;
+    }
+    .icons{
+        height: 35px;
+    }
+    .titulo--skills h2{
+        font-size: 3rem;
+    }
+    .contenedor--skills{
+        display: flex;
+    }
+    .contenedor--skills ul{
+        font-size: 2.4rem;
+        padding: 20px;
+        list-style: none;
+        
+    }
+    .contenedor--skills li{
+        display: flex;
+        margin-top: 25px;
+        align-items: center;
+        border-bottom: 5px solid rgb(170, 170, 170);
+    }
+    .presentacion--me{
+        color: aliceblue;
+        display: flex;
+        width: 95vh;
+        flex-direction: column;
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 70px;
+    }
+    .presentacion--me p{
+        font-size: 1rem;
+    }
+    .contact-me{
+        color: aliceblue;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .contact-me ul{
+        font-size: 2rem;
+        padding: 20px;
+        list-style: none;
+        
+        
+    }
+    .contact-me a{
+        display: flex;
+        margin-top: 25px;
+        align-items: center;
+        text-decoration: none;
+        color: aliceblue;
+        border-bottom: 4px solid rgb(126, 125, 125);
+        width: 12vw;
+    }
+
+}
